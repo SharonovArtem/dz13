@@ -23,14 +23,14 @@ namespace jun1
 
             signNumber = name.Length + extraSign;
 
-            for (int i = signNumber; i > 0; i--)
+            for (int repetitionNumber = signNumber; repetitionNumber > 0; repetitionNumber--)
             {
                 Console.Write(sign);
             }
 
             Console.WriteLine("\n" + sign + name + sign);
 
-            for (int i = signNumber; i > 0; i--)
+            for (int repetitionNumber = signNumber; repetitionNumber > 0; repetitionNumber--)
             {
                 Console.Write(sign);
             }
