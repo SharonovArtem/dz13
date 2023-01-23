@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace jun1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            char sign;
+            int signNumber;
+            int extraSign = 2;
+
+            Console.WriteLine("Здравствуйте! Введите имя");
+            name = Console.ReadLine();
+            Console.WriteLine("каким знаком желаете обвести?");
+            sign = Convert.ToChar(Console.ReadLine());
+
+            signNumber = name.Length + extraSign;
+
+            for (int i = signNumber; i > 0; i--)
+            {
+                Console.Write(sign);
+            }
+
+            Console.WriteLine("\n" + sign + name + sign);
+
+            for (int i = signNumber; i > 0; i--)
+            {
+                Console.Write(sign);
+            }
+
+            Console.WriteLine("\n");
+        }
+    }
+}
