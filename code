@@ -14,14 +14,13 @@ namespace jun1
             string name;
             char sign;
             int signNumber;
-            int extraSign = 2;
 
             Console.WriteLine("Здравствуйте! Введите имя");
             name = Console.ReadLine();
             Console.WriteLine("каким знаком желаете обвести?");
             sign = Convert.ToChar(Console.ReadLine());
 
-            signNumber = name.Length + extraSign;
+            signNumber = name.Length + Convert.ToString(sign).Length + Convert.ToString(sign).Length;
 
             for (int repetitionNumber = signNumber; repetitionNumber > 0; repetitionNumber--)
             {
